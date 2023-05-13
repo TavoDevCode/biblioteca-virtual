@@ -9,10 +9,10 @@ const HomePage: NextPage = () => {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
       <h1 className={classNames(styles.text_gradient, 'text-[3rem] sm:text-[6rem] md:text-[8rem] font-semibold text-center')}>
-        Bienvenidos a la biblioteca Virtua
+        Bienvenidos a la biblioteca virtual
       </h1>
 
-      <Link href={'/biblioteca-virtua'}>
+      <Link href={'/biblioteca-virtual'}>
         <button className="flex justify-center items-center gap-2 bg-transparent hover:bg-purple-600 text-purple-700 font-semibold hover:text-white m-5 py-2 px-4 text-2xl border-2 border-purple-500 hover:border-transparent rounded transition duration-500 ease-in-out">
           Ver biblioteca
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

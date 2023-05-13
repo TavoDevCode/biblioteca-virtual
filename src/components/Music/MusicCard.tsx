@@ -60,7 +60,7 @@ export const MusicCard: FC<MusicCardProps> = ({ imgSong, songSrc, subtitle, titl
     const minutes = Math.floor(time / 60)
     const seconds = Math.floor(time % 60)
     const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`
-    return `${minutes}:${formattedSeconds}`
+    return typeof minutes === 'number' && typeof seconds === 'number' ? `${minutes}:${formattedSeconds}` : '00:00'
   }
 
   const calculateProgress = (): string => {
