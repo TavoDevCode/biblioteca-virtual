@@ -1,0 +1,14 @@
+.text_gradient {
+  background-image: url('/bg-image.jpeg');
+  color: #fff;
+  color: transparent;
+  background-size: contain;
+  -webkit-background-clip: text;
+  animation: stripes 28s infinite alternate;
+}
+
+@keyframes stripes {
+  100% {
+    background-position: right 20px bottom 10px;
+  }
+}
