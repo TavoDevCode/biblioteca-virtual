@@ -92,7 +92,7 @@ export const MusicCard: FC<MusicCardProps> = ({ imgSong, songSrc, subtitle, titl
         </div>
         <div className="w-full flex justify-between mt-1">
           <p className="text-xs font-medium">{formatTime(currentTime)}</p>
-          <p className="text-xs font-medium">{formatTime(duration)}</p>
+          <p className="text-xs font-medium">{formatTime(duration) === 'NaN:NaN' ? '0:00' : formatTime(duration)}</p>
         </div>
         <div className="w-full flex justify-between my-2">
           <div className="flex-auto flex items-center justify-evenly">
